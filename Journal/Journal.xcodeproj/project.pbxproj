@@ -16,6 +16,9 @@
 		0AC54420237A17C90021838B /* EntriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC5441F237A17C90021838B /* EntriesTableViewController.swift */; };
 		0AC54422237A1A6D0021838B /* EntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC54421237A1A6D0021838B /* EntryTableViewCell.swift */; };
 		0AC54424237A25140021838B /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC54423237A25140021838B /* EntryDetailViewController.swift */; };
+		0AC54426237A27240021838B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC54425237A27240021838B /* CoreDataStack.swift */; };
+		0AC54429237A27D30021838B /* Entry.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AC54427237A27D30021838B /* Entry.xcdatamodeld */; };
+		0AC5442B237A288E0021838B /* Entry+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC5442A237A288E0021838B /* Entry+Convenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		0AC5441F237A17C90021838B /* EntriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesTableViewController.swift; sourceTree = "<group>"; };
 		0AC54421237A1A6D0021838B /* EntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTableViewCell.swift; sourceTree = "<group>"; };
 		0AC54423237A25140021838B /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
+		0AC54425237A27240021838B /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		0AC54428237A27D30021838B /* Entry.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Entry.xcdatamodel; sourceTree = "<group>"; };
+		0AC5442A237A288E0021838B /* Entry+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+Convenience.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 				0AC5440D237A13720021838B /* SceneDelegate.swift */,
 				0AC5440F237A13720021838B /* ViewController.swift */,
 				0AC54411237A13720021838B /* Main.storyboard */,
+				0AC54425237A27240021838B /* CoreDataStack.swift */,
+				0AC54427237A27D30021838B /* Entry.xcdatamodeld */,
+				0AC5442A237A288E0021838B /* Entry+Convenience.swift */,
 				0AC54423237A25140021838B /* EntryDetailViewController.swift */,
 				0AC54421237A1A6D0021838B /* EntryTableViewCell.swift */,
 				0AC5441F237A17C90021838B /* EntriesTableViewController.swift */,
@@ -147,9 +156,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AC54426237A27240021838B /* CoreDataStack.swift in Sources */,
+				0AC5442B237A288E0021838B /* Entry+Convenience.swift in Sources */,
 				0AC54420237A17C90021838B /* EntriesTableViewController.swift in Sources */,
 				0AC54422237A1A6D0021838B /* EntryTableViewCell.swift in Sources */,
 				0AC54410237A13720021838B /* ViewController.swift in Sources */,
+				0AC54429237A27D30021838B /* Entry.xcdatamodeld in Sources */,
 				0AC5440C237A13720021838B /* AppDelegate.swift in Sources */,
 				0AC54424237A25140021838B /* EntryDetailViewController.swift in Sources */,
 				0AC5440E237A13720021838B /* SceneDelegate.swift in Sources */,
@@ -348,6 +360,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0AC54427237A27D30021838B /* Entry.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0AC54428237A27D30021838B /* Entry.xcdatamodel */,
+			);
+			currentVersion = 0AC54428237A27D30021838B /* Entry.xcdatamodel */;
+			path = Entry.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0AC54400237A13720021838B /* Project object */;
 }

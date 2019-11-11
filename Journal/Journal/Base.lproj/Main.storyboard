@@ -71,10 +71,10 @@
             </objects>
             <point key="canvasLocation" x="1213.0434782608697" y="166.74107142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Entry Detail View Controller-->
         <scene sceneID="Fzb-os-Zob">
             <objects>
-                <viewController id="D85-gc-J5F" sceneMemberID="viewController">
+                <viewController id="D85-gc-J5F" customClass="EntryDetailViewController" customModule="Journal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dEl-8O-5uW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,8 +105,16 @@
                         <viewLayoutGuide key="safeArea" id="y8v-tm-kwj"/>
                     </view>
                     <navigationItem key="navigationItem" id="Zei-4S-ji6">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="3xy-1W-QB3"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="3xy-1W-QB3">
+                            <connections>
+                                <action selector="entrySaveButton:" destination="D85-gc-J5F" id="UC3-Eu-Dhx"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="entryTextView" destination="WsT-g1-s30" id="Z6y-ws-RGR"/>
+                        <outlet property="entryTitleTextField" destination="FPG-w6-HQG" id="AGU-Ad-82U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d07-R2-Hpx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
