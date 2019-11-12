@@ -14,17 +14,26 @@ class EntryTableViewCell: UITableViewCell {
     @IBOutlet weak var bodyTextLabel: UILabel!
     @IBOutlet weak var dateStampLabel: UILabel!
     
-    
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    var entry: Entry? {
+        didSet {
+            updateViews()
+        }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    var dateFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "LLL dd yyyy"
+        return formatter
+    }
+    
+    func updateViews() {
+        guard let entry = entry,
+            let timeStamp = entry.timeStamp
+        else { return }
+        
+        entryTitleLabel.text = entry.title
+        bodyTextLabel.text = entry.bodyText
+        dateStampLabel.text = dateFormatter.string(from: timeStamp)
     }
 
 }
