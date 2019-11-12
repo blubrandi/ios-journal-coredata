@@ -14,7 +14,7 @@ class EntryTableViewCell: UITableViewCell {
     @IBOutlet weak var bodyTextLabel: UILabel!
     @IBOutlet weak var dateStampLabel: UILabel!
     
-    var entry: Entry? {
+    var entry: JournalEntry? {
         didSet {
             updateViews()
         }
@@ -27,6 +27,7 @@ class EntryTableViewCell: UITableViewCell {
     }
     
     func updateViews() {
+        print(entry?.title)
         guard let entry = entry,
             let timeStamp = entry.timeStamp
         else { return }
