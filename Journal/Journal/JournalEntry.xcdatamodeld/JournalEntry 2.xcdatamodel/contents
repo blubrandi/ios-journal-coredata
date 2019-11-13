@@ -3,11 +3,10 @@
     <entity name="JournalEntry" representedClassName="JournalEntry" syncable="YES" codeGenerationType="class">
         <attribute name="bodyText" attributeType="String"/>
         <attribute name="identifier" attributeType="String"/>
-        <attribute name="mood" optional="YES" attributeType="String" defaultValueString="😶"/>
         <attribute name="timeStamp" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="title" attributeType="String"/>
     </entity>
     <elements>
-        <element name="JournalEntry" positionX="160" positionY="192" width="128" height="118"/>
+        <element name="JournalEntry" positionX="160" positionY="192" width="128" height="103"/>
     </elements>
 </model>
