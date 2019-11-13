@@ -35,12 +35,17 @@ class EntryDetailViewController: UIViewController {
         guard let bodyText = entryTextView.text,
             !bodyText.isEmpty else { return }
         
+        let moodIndex = moodSegmentedControl.selectedSegmentIndex
+        let mood = JournalEntryMood.allCases[moodIndex]
+        
         if let entry = entry {
             entry.title = title
             entry.bodyText = bodyText
+            entry.mood = mood.rawValue
+            
         } else {
 //            let _ = Entry(bodyText: bodyText, title: title)
-            JournalEntry(bodyText: bodyText, title: title)
+            let _ = JournalEntry(bodyText: bodyText, title: title, mood: mood)
         }
         do {
             let moc = CoreDataStack.shared.mainContext
@@ -58,16 +63,15 @@ class EntryDetailViewController: UIViewController {
         title = entry?.title ?? "Create JournalEntry"
         entryTitleTextField.text = entry?.title
         entryTextView.text = entry?.bodyText
+        let mood: JournalEntryMood
+        if let entryMood = entry?.mood {
+            mood = JournalEntryMood(rawValue: entryMood)!
+        } else {
+            mood = .😶
+        }
         
+        moodSegmentedControl.selectedSegmentIndex = JournalEntryMood.allCases.firstIndex(of: mood)!
     }
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
