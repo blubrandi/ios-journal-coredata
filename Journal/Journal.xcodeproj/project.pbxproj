@@ -19,6 +19,7 @@
 		0AC54426237A27240021838B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC54425237A27240021838B /* CoreDataStack.swift */; };
 		0AC54429237A27D30021838B /* JournalEntry.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AC54427237A27D30021838B /* JournalEntry.xcdatamodeld */; };
 		0AC5442B237A288E0021838B /* Entry+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC5442A237A288E0021838B /* Entry+Convenience.swift */; };
+		0AC54434237DA8CF0021838B /* EntryRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC54433237DA8CF0021838B /* EntryRepresentation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		0AC54428237A27D30021838B /* Entry.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Entry.xcdatamodel; sourceTree = "<group>"; };
 		0AC5442A237A288E0021838B /* Entry+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+Convenience.swift"; sourceTree = "<group>"; };
 		0AC5442D237BBF180021838B /* JournalEntry 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "JournalEntry 2.xcdatamodel"; sourceTree = "<group>"; };
+		0AC54433237DA8CF0021838B /* EntryRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryRepresentation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				0AC54427237A27D30021838B /* JournalEntry.xcdatamodeld */,
 				0AC5442A237A288E0021838B /* Entry+Convenience.swift */,
 				0AC54423237A25140021838B /* EntryDetailViewController.swift */,
+				0AC54433237DA8CF0021838B /* EntryRepresentation.swift */,
 				0AC54421237A1A6D0021838B /* EntryTableViewCell.swift */,
 				0AC5441F237A17C90021838B /* EntriesTableViewController.swift */,
 				0AC54414237A13740021838B /* Assets.xcassets */,
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AC54426237A27240021838B /* CoreDataStack.swift in Sources */,
+				0AC54434237DA8CF0021838B /* EntryRepresentation.swift in Sources */,
 				0AC5442B237A288E0021838B /* Entry+Convenience.swift in Sources */,
 				0AC54420237A17C90021838B /* EntriesTableViewController.swift in Sources */,
 				0AC54422237A1A6D0021838B /* EntryTableViewCell.swift in Sources */,
